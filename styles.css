@@ -1,0 +1,98 @@
+body {
+    margin: 20px;
+    /*
+    Challenge:
+    Find a web safe font you like, and add it 
+    to your card.
+    */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.avatar {
+    width: 150px;
+    /* border: 1px solid; */
+    border-top-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
+
+
+.card {
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    background: rgb(85, 140, 140);
+    /* ANIMATION */
+    animation-name: elijah;
+    position: relative;
+    animation-duration: 4s;
+    /* background: #ddebf8; */
+    color: rgb(221, 232, 185);
+    /* color: #2b2839; */
+    border-bottom: 6px solid rgb(245, 133, 63);
+    border-top: 6px solid rgb(245, 133, 63);
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 12px;
+    
+    text-shadow: 3px 3px 4px #2e1f27, 0 0 20px #bcd2ee, 0 0 5px #f5853f;
+}
+
+.card:hover {
+    border: none;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 0;
+    
+    border-left: 6px solid rgb(245, 133, 63);
+    border-right: 6px solid rgb(245, 133, 63);
+    
+    text-shadow: 2px 0px 8px #2e1f27, 1px 1px 0px #bcd2ee, 0 2px 5px #f5853f;
+
+    
+    .avatar {
+        /* border: 2px solid black; */
+        /* border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 12px;
+        border-top-right-radius: 12px; */
+        border-radius: 12px;
+    }
+}
+
+.border-blue {
+    border: 1px dotted blue;
+}
+
+
+@keyframes elijah {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:20px; top:0px;}
+  50%  {background-color:blue; left:20px; top:20px;}
+  75%  {background-color:green; left:0px; top:20px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* @keyframes elijah {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+} */
+
+/*
+Stretch goals:
+Find other ways you can personalize 
+the design of your business card, e.g.:
+- change the border(s)
+- add border radius
+- shuffle the layout
+- shadows        🤯
+- hover effects  🤯🤯
+- animations     🤯🤯🤯
+*/
+
